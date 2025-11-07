@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  /* Base */
+  --background: #ffffff;
+  --foreground: #0b1b13;
+
+  /* Brand - Grow Controller */
+  --gc-primary: #16a34a; /* emerald-600 */
+  --gc-primary-foreground: #ffffff;
+  --gc-muted: #edf7f1; /* soft green tint */
+  --gc-muted-foreground: #0b1b13;
+}
+
+@theme inline {
+  /* Map tokens to Tailwind theme */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--gc-primary);
+  --color-primary-foreground: var(--gc-primary-foreground);
+  --color-muted: var(--gc-muted);
+  --color-muted-foreground: var(--gc-muted-foreground);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0f0a; /* deep green-black */
+    --foreground: #e7f5ec;
+    --gc-primary: #22c55e; /* emerald-500 for better contrast on dark */
+    --gc-primary-foreground: #052e16;
+    --gc-muted: #0f1a13;
+    --gc-muted-foreground: #cfe8d9;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Utility helpers for brand surfaces */
+.surface-muted {
+  background-color: var(--color-muted);
+  color: var(--color-muted-foreground);
+}
