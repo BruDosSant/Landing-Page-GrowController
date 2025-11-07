@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LottieAnimation from "./components/LottieAnimation";
 
 export default function Home() {
   return (
@@ -52,33 +53,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="relative">
-              <div className="mx-auto aspect-[4/3] w-full max-w-md rounded-2xl border border-black/10 bg-white p-4 shadow-sm dark:border-white/10 dark:bg-black">
-                <div className="grid h-full grid-cols-3 gap-3">
-                  <div className="rounded-xl bg-primary/10" />
-                  <div className="rounded-xl bg-primary/20" />
-                  <div className="rounded-xl bg-primary/30" />
-                  <div className="col-span-3 rounded-xl bg-muted p-4">
-                    <div className="h-2 w-24 rounded bg-primary" />
-                    <div className="mt-3 h-2 w-40 rounded bg-black/10 dark:bg-white/10" />
-                    <div className="mt-2 h-2 w-32 rounded bg-black/10 dark:bg-white/10" />
-                  </div>
-                  <div className="col-span-3 grid grid-cols-3 gap-3">
-                    <div className="rounded-xl bg-black/5 p-4 dark:bg-white/10">
-                      <div className="h-2 w-16 rounded bg-primary" />
-                      <div className="mt-2 h-2 w-20 rounded bg-black/10 dark:bg-white/10" />
-                    </div>
-                    <div className="rounded-xl bg-black/5 p-4 dark:bg-white/10">
-                      <div className="h-2 w-16 rounded bg-primary" />
-                      <div className="mt-2 h-2 w-20 rounded bg-black/10 dark:bg-white/10" />
-                    </div>
-                    <div className="rounded-xl bg-black/5 p-4 dark:bg-white/10">
-                      <div className="h-2 w-16 rounded bg-primary" />
-                      <div className="mt-2 h-2 w-20 rounded bg-black/10 dark:bg-white/10" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="flex items-center justify-center">
+              <LottieAnimation />
             </div>
           </div>
         </div>
