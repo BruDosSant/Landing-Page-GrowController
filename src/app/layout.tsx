@@ -46,7 +46,10 @@ export const metadata: Metadata = {
       "Optimiza y escala el crecimiento de tu negocio con insights accionables.",
   },
   icons: {
-    icon: [{ url: "/favicon.ico" }],
+    icon: [
+      { url: "/logo-gc.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
   },
 };
 

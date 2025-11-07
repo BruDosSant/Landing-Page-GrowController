@@ -8,7 +8,7 @@ export default function Home() {
       <header className="sticky top-0 z-10 border-b border-black/5 bg-background/80 backdrop-blur dark:border-white/10">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <div className="flex items-center gap-3">
-            <Image src="/logo-gc.svg" alt="Grow Controller" width={28} height={28} />
+            <Image src="/logo-perso.svg" alt="Grow Controller" width={28} height={28} />
             <span className="text-base font-semibold tracking-tight">Grow Controller</span>
           </div>
           <nav className="hidden items-center gap-6 text-sm sm:flex">
@@ -19,7 +19,7 @@ export default function Home() {
               href="#demo"
               className="rounded-full bg-primary px-4 py-2 font-medium text-primary-foreground shadow-sm transition hover:brightness-95"
             >
-              Solicitar demo
+              Demo
             </Link>
           </nav>
         </div>
@@ -35,9 +35,7 @@ export default function Home() {
                 Conoce al equipo detrás de Grow Controller
               </h1>
               <p className="mt-5 max-w-prose text-pretty text-base text-black/70 dark:text-white/70 sm:text-lg">
-                Somos un equipo de 4 profesionales construyendo una plataforma para
-                monitorear, automatizar y escalar métricas clave. El foco: las
-                personas y cómo trabajamos.
+                Somos un equipo de 4 profesionales construyendo una plataforma para automatizar la agricultura del mañana.
               </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <Link
@@ -52,10 +50,6 @@ export default function Home() {
                 >
                   Sobre el proyecto
                 </a>
-              </div>
-              <div className="mt-8 flex items-center gap-4 opacity-80">
-                <Image src="/vercel.svg" alt="Infraestructura" width={24} height={24} />
-                <span className="text-xs">Rendimiento de clase mundial con Next.js 16 y React 19</span>
               </div>
             </div>
             <div className="relative">
@@ -95,14 +89,14 @@ export default function Home() {
         <div className="mb-10 max-w-2xl">
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Nuestro equipo</h2>
           <p className="mt-3 text-black/70 dark:text-white/70">
-            4 personas, una misión: convertir datos en crecimiento accionable.
+            4 personas, una misión: automatizar el mañana.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <TeamCard avatar="/team-1.svg" name="Nombre 1" role="CEO / Co-founder" />
-          <TeamCard avatar="/team-2.svg" name="Nombre 2" role="CTO / Co-founder" />
-          <TeamCard avatar="/team-3.svg" name="Nombre 3" role="Product Designer" />
-          <TeamCard avatar="/team-4.svg" name="Nombre 4" role="Data Engineer" />
+          <TeamCard avatar="/team-1.svg" name="Bruno Dos Santos" role="Q&A Engineer / Backend Developer" />
+          <TeamCard avatar="/team-2.svg" name="Brahian Amaral" role="Hardware Engineer / Backend Developer" />
+          <TeamCard avatar="/team-3.svg" name="Agustin Lahalo" role="Full Stack Developer" />
+          <TeamCard avatar="/team-4.svg" name="Juan Diego Aedo" role="Frontend Developer" />
         </div>
       </section>
 
@@ -151,7 +145,7 @@ export default function Home() {
       <footer id="contact" className="border-t border-black/5 py-10 text-sm dark:border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 sm:flex-row sm:px-6">
           <div className="flex items-center gap-3">
-            <Image src="/logo-gc.svg" alt="Grow Controller" width={20} height={20} />
+            <Image src="/logo-perso.svg" alt="Grow Controller" width={20} height={20} />
             <span className="font-medium">Grow Controller</span>
           </div>
           <div className="text-black/60 dark:text-white/60">© {new Date().getFullYear()} Todos los derechos reservados.</div>
