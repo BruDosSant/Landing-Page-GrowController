@@ -7,10 +7,10 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-10 border-b border-black/5 bg-background/80 backdrop-blur dark:border-white/10">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-          <div className="flex items-center gap-3">
+          <Link href="#" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <Image src="/logo-perso.svg" alt="Grow Controller" width={28} height={28} />
             <span className="text-base font-semibold tracking-tight">Grow Controller</span>
-          </div>
+          </Link>
           <nav className="hidden items-center gap-6 text-sm sm:flex">
             <a href="#features" className="hover:text-primary">Características</a>
             <a href="#equipo" className="hover:text-primary">Equipo</a>
