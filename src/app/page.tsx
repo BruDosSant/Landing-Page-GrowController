@@ -16,10 +16,10 @@ export default function Home() {
             <a href="#equipo" className="hover:text-primary">Equipo</a>
             <a href="#contact" className="hover:text-primary">Contacto</a>
             <Link
-              href="#demo"
+              href="#repositorio"
               className="rounded-full bg-primary px-4 py-2 font-medium text-primary-foreground shadow-sm transition hover:brightness-95"
             >
-              Demo
+              Código Abierto
             </Link>
           </nav>
         </div>
@@ -115,27 +115,124 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Repositorio Open Source */}
+      <section id="repositorio" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="rounded-2xl border border-black/10 bg-gradient-to-br from-primary/10 to-transparent p-8 text-center shadow-sm dark:border-white/10">
+          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/20">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-primary"
+            >
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+          </div>
+          <h3 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+            Grow Controller es Open Source
+          </h3>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-black/70 dark:text-white/70 sm:text-lg">
+            Creemos en la transparencia y la colaboración. Nuestro código está disponible públicamente para que puedas descargarlo, modificarlo y contribuir al proyecto.
+          </p>
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href="https://github.com/Brahian-A/Grow_controller"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-95"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+              Ver en GitHub
+            </a>
+            <a
+              href="https://github.com/Brahian-A/Grow_controller/archive/refs/heads/main.zip"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-full border border-black/10 px-6 py-3 text-sm font-semibold transition hover:bg-black/5 dark:border-white/15 dark:hover:bg-white/10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" x2="12" y1="15" y2="3" />
+              </svg>
+              Descargar código
+            </a>
+          </div>
+          <div className="mt-8 rounded-lg border border-black/10 bg-white/50 p-4 text-left dark:border-white/10 dark:bg-black/20">
+            <h4 className="mb-3 text-sm font-semibold">¿Cómo empezar?</h4>
+            <ol className="space-y-2 text-sm text-black/70 dark:text-white/70">
+              <li className="flex gap-2">
+                <span className="font-semibold text-primary">1.</span>
+                <span>Clona el repositorio desde GitHub o descarga el código fuente</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-semibold text-primary">2.</span>
+                <span>Sigue las instrucciones de instalación en el README</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-semibold text-primary">3.</span>
+                <span>Personaliza y adapta el sistema según tus necesidades</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-semibold text-primary">4.</span>
+                <span>Contribuye con mejoras y comparte tu experiencia</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section id="demo" className="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
         <div className="rounded-2xl border border-black/10 bg-gradient-to-br from-primary/10 to-transparent p-8 text-center shadow-sm dark:border-white/10">
           <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">
-            ¿Listo para tomar control del crecimiento?
+            ¿Necesitas ayuda o tienes preguntas?
           </h3>
           <p className="mx-auto mt-3 max-w-prose text-black/70 dark:text-white/70">
-            Agenda una demo personalizada y descubre cómo Grow Controller acelera tus resultados.
+            Contáctanos si necesitas soporte técnico o quieres conocer más sobre el proyecto.
           </p>
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="mailto:contacto@growcontroller.com?subject=Demo%20Grow%20Controller"
+              href="mailto:contacto@growcontroller.app?subject=Consulta%20Grow%20Controller"
               className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-95"
             >
-              Solicitar demo
+              Contactar
             </a>
             <a
               href="#contact"
               className="rounded-full border border-black/10 px-6 py-3 text-sm font-semibold transition hover:bg-black/5 dark:border-white/15 dark:hover:bg-white/10"
             >
-              Hablar con ventas
+              Más información
             </a>
           </div>
         </div>
