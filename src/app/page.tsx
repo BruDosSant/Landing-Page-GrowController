@@ -13,7 +13,7 @@ export default function Home() {
             <span className="text-base font-semibold tracking-tight">Grow Controller</span>
           </Link>
           <nav className="hidden items-center gap-6 text-sm sm:flex">
-            <a href="#features" className="hover:text-primary">Características</a>
+            <a href="#proyecto" className="hover:text-primary">Proyecto</a>
             <a href="#equipo" className="hover:text-primary">Equipo</a>
             <a href="#contact" className="hover:text-primary">Contacto</a>
             <Link
@@ -33,24 +33,24 @@ export default function Home() {
           <div className="grid items-center gap-10 sm:grid-cols-2">
             <div>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-                Conoce al equipo detrás de Grow Controller
+                Un equipo, una misión: Automatizar la agricultura.
               </h1>
               <p className="mt-5 max-w-prose text-pretty text-base text-black/70 dark:text-white/70 sm:text-lg">
-                Somos un equipo de 4 profesionales construyendo una plataforma para automatizar la agricultura del mañana.
+                Somos un equipo de 4 profesionales y este es nuestro proyecto. Te presentamos Grow Controller, una plataforma de código abierto para monitorear y controlar invernaderos usando IA y un stack de IoT moderno.
               </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  href="#equipo"
+                  href="#proyecto"
                   className="rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-95"
                 >
-                  Ver equipo
+                  Ver el Proyecto
                 </Link>
-                <a
-                  href="#features"
+                <Link
+                  href="#equipo"
                   className="rounded-full border border-black/10 px-5 py-3 text-center text-sm font-semibold transition hover:bg-black/5 dark:border-white/15 dark:hover:bg-white/10"
                 >
-                  Sobre el proyecto
-                </a>
+                  Conocer al Equipo
+                </Link>
               </div>
             </div>
             <div className="flex items-center justify-center">
@@ -60,12 +60,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Features / Proyecto */}
+      <section id="proyecto" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="mb-10 max-w-2xl">
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Sobre el proyecto</h2>
+          <p className="mt-3 text-black/70 dark:text-white/70">
+            Grow Controller es una plataforma de automatización <strong>inteligente</strong> para invernaderos. No solo te permite controlar tu cultivo en tiempo real si no que puedes decirle qué planta quieres cultivar y el sistema usará IA para establecer las condiciones óptimas de riego, luz y temperatura por ti.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <FeatureCard icon="/globe.svg" title="Panel unificado" description="Conecta tus invernaderos y obtén una vista 360° de tus cultivos." />
+          <FeatureCard icon="/window.svg" title="Autoconfiguración con IA" description="Dile qué cultivas y Grow Controller usará IA para consultar y aplicar los umbrales óptimos de temperatura y humedad de suelo." />
+          <FeatureCard icon="/file.svg" title="Historial y Alertas" description="Visualiza el historial de tus sensores en gráficos detallados y recibe alertas cuando los niveles de agua o humedad sean críticos." />
+        </div>
+      </section>
+
       {/* Team */}
       <section id="equipo" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="mb-10 max-w-2xl">
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Nuestro equipo</h2>
           <p className="mt-3 text-black/70 dark:text-white/70">
-            4 personas, una misión: automatizar el mañana.
+          Somos 4 profesionales apasionados por la tecnología y los desafíos. Hemos unido nuestras habilidades para construir Grow Controller, una plataforma completa para automatizar la agricultura en invernaderos.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -73,21 +88,6 @@ export default function Home() {
           <TeamCard avatar="/team-2.svg" name="Brahian Amaral" role="Hardware Engineer / Backend Developer" />
           <TeamCard avatar="/team-3.svg" name="Agustin Lahalo" role="Full Stack Developer" />
           <TeamCard avatar="/team-4.svg" name="Juan Diego Aedo" role="Frontend Developer" />
-        </div>
-      </section>
-
-      {/* Features */}
-      <section id="features" className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="mb-10 max-w-2xl">
-          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Sobre el proyecto (secundario)</h2>
-          <p className="mt-3 text-black/70 dark:text-white/70">
-            Métricas, automatizaciones y reportes para accionar en tiempo real.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <FeatureCard icon="/globe.svg" title="Panel unificado" description="Conecta tus fuentes y obtén una vista 360° del funnel." />
-          <FeatureCard icon="/window.svg" title="Automatizaciones" description="Crea reglas para alertas y acciones sin escribir código." />
-          <FeatureCard icon="/file.svg" title="Reportes inteligentes" description="Informes claros, compartibles y listos para presentar." />
         </div>
       </section>
 
@@ -117,7 +117,7 @@ export default function Home() {
           <p className="mx-auto mt-4 max-w-2xl text-base text-black/70 dark:text-white/70 sm:text-lg">
             Creemos en la transparencia y la colaboración. Nuestro código está disponible públicamente para que puedas descargarlo, modificarlo y contribuir al proyecto.
           </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-8 flex items-center justify-center">
             <a
               href="https://github.com/Brahian-A/Grow_controller"
               target="_blank"
@@ -140,36 +140,13 @@ export default function Home() {
               </svg>
               Ver en GitHub
             </a>
-            <a
-              href="https://github.com/Brahian-A/Grow_controller/archive/refs/heads/main.zip"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full border border-black/10 px-6 py-3 text-sm font-semibold transition hover:bg-black/5 dark:border-white/15 dark:hover:bg-white/10"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" x2="12" y1="15" y2="3" />
-              </svg>
-              Descargar código
-            </a>
           </div>
           <div className="mt-8 rounded-lg border border-black/10 bg-white/50 p-4 text-left dark:border-white/10 dark:bg-black/20">
             <h4 className="mb-3 text-sm font-semibold">¿Cómo empezar?</h4>
             <ol className="space-y-2 text-sm text-black/70 dark:text-white/70">
               <li className="flex gap-2">
                 <span className="font-semibold text-primary">1.</span>
-                <span>Clona el repositorio desde GitHub o descarga el código fuente</span>
+                <span>Clona el repositorio desde GitHub</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-semibold text-primary">2.</span>
@@ -197,18 +174,12 @@ export default function Home() {
           <p className="mx-auto mt-3 max-w-prose text-black/70 dark:text-white/70">
             Contáctanos si necesitas soporte técnico o quieres conocer más sobre el proyecto.
           </p>
-          <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className="mt-6 flex items-center justify-center">
             <a
               href="mailto:contacto@growcontroller.app?subject=Consulta%20Grow%20Controller"
               className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-95"
             >
               Contactar
-            </a>
-            <a
-              href="#contact"
-              className="rounded-full border border-black/10 px-6 py-3 text-sm font-semibold transition hover:bg-black/5 dark:border-white/15 dark:hover:bg-white/10"
-            >
-              Más información
             </a>
           </div>
         </div>

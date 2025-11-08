@@ -7,7 +7,7 @@ export default function LottieAnimation() {
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
-    fetch("/Error 404 on Laptop.json")
+    fetch("/Growing Plant.json")
       .then((response) => response.json())
       .then((data) => setAnimationData(data))
       .catch((error) => console.error("Error loading animation:", error));
@@ -19,7 +19,7 @@ export default function LottieAnimation() {
 
   return (
     <div className="w-full max-w-md mx-auto">
-      <Lottie animationData={animationData} loop={true} />
+      <Lottie animationData={animationData} loop={false} />
     </div>
   );
 }
