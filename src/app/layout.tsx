@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/logo-gc.svg", type: "image/svg+xml" },
+      { url: "/logo-perso.svg", type: "image/svg+xml" },
       { url: "/favicon.ico" },
     ],
   },
