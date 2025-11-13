@@ -87,7 +87,7 @@ export default function Home() {
           <TeamCard avatar="/Bruno-Dos-Santos.png" name="Bruno Dos Santos" role="Q&A Engineer / Backend Developer" />
           <TeamCard avatar="/Brahian-Amaral.png" name="Brahian Amaral" role="Hardware Engineer / Backend Developer" />
           <TeamCard avatar="/Striker.png" name="Agustin Lahalo" role="Full Stack Developer" />
-          <TeamCard avatar="/Juan-Diego.png" name="Juan Diego Aedo" role="Frontend Developer" />
+          <TeamCard avatar="/Juan-Diego.png" name="Juan Diego Martinez Haedo" role="Frontend Developer" />
         </div>
       </section>
 
