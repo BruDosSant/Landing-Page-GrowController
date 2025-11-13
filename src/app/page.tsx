@@ -69,9 +69,9 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <FeatureCard icon="/globe.svg" title="Panel unificado" description="Conecta tus invernaderos y obtén una vista 360° de tus cultivos." />
-          <FeatureCard icon="/window.svg" title="Autoconfiguración con IA" description="Dile qué cultivas y Grow Controller usará IA para consultar y aplicar los umbrales óptimos de temperatura y humedad de suelo." />
-          <FeatureCard icon="/file.svg" title="Historial y Alertas" description="Visualiza el historial de tus sensores en gráficos detallados y recibe alertas cuando los niveles de agua o humedad sean críticos." />
+          <FeatureCard icon="/dashboard.PNG" title="Panel unificado" description="Conecta tus invernaderos y obtén una vista 360° de tus cultivos." />
+          <FeatureCard icon="/gemini.PNG" title="Autoconfiguración con IA" description="Dile qué cultivas y Grow Controller usará IA para consultar y aplicar los umbrales óptimos de temperatura y humedad de suelo." />
+          <FeatureCard icon="/Alertas.PNG" title="Historial y Alertas" description="Visualiza el historial de tus sensores en gráficos detallados y recibe alertas cuando los niveles de agua o humedad sean críticos." />
         </div>
       </section>
 
@@ -84,10 +84,10 @@ export default function Home() {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <TeamCard avatar="/team-1.svg" name="Bruno Dos Santos" role="Q&A Engineer / Backend Developer" />
-          <TeamCard avatar="/team-2.svg" name="Brahian Amaral" role="Hardware Engineer / Backend Developer" />
-          <TeamCard avatar="/team-3.svg" name="Agustin Lahalo" role="Full Stack Developer" />
-          <TeamCard avatar="/team-4.svg" name="Juan Diego Aedo" role="Frontend Developer" />
+          <TeamCard avatar="/Bruno-Dos-Santos.png" name="Bruno Dos Santos" role="Q&A Engineer / Backend Developer" />
+          <TeamCard avatar="/Brahian-Amaral.png" name="Brahian Amaral" role="Hardware Engineer / Backend Developer" />
+          <TeamCard avatar="/Striker.png" name="Agustin Lahalo" role="Full Stack Developer" />
+          <TeamCard avatar="/Juan-Diego.png" name="Juan Diego Aedo" role="Frontend Developer" />
         </div>
       </section>
 
@@ -200,19 +200,23 @@ export default function Home() {
 }
 
 type FeatureCardProps = {
-  icon: string;
   title: string;
   description: string;
+  icon: string;
 };
 
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="rounded-2xl border border-black/10 p-6 shadow-sm transition hover:shadow-md dark:border-white/10">
-      <div className="flex items-center gap-3">
-        <Image src={icon} alt="" width={20} height={20} className="dark:invert" />
+    <div className="h-full flex flex-col justify between rounded-2xl border border-black/10 p-6 shadow-sm transition hover:shadow-md dark:border-white/10">
+      <div>
         <h3 className="text-base font-semibold tracking-tight">{title}</h3>
+        </div>
+      <div className="flex-grow">
+        <p className="mt-3 text-sm text-black/70 dark:text-white/70">{description}</p>
       </div>
-      <p className="mt-3 text-sm text-black/70 dark:text-white/70">{description}</p>
+      <div className="flex items-center gap-3 mt-6">
+        <Image src={icon} alt="" width={40000} height={40000} className="w-full h-full object-cover" />
+      </div>
     </div>
   );
 }
